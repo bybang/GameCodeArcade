@@ -6,6 +6,8 @@
 
 ### @activities true
 
+### @hideDone true
+
 ## 첫 번째 활동
 
 ### Events
