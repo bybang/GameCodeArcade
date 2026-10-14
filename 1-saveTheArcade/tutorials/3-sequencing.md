@@ -1,26 +1,30 @@
 # Sequencing
 
+<!-- Modified by bybang on 2026-10-15: Korean localization of instructional prose and verified deployed @hideDone directive. Original: Cleverlike-MakeCode/GameCodeArcade, 1-saveTheArcade/tutorials/3-sequencing.md, commit 2b7a616a1212cbf9992450213c62b8d0bdfffd0b. Licensed under Apache-2.0; see LICENSE. -->
+
 ### @explicitHints 1
 
 ### @activities true
 
-## First Activity
+### @hideDone true
 
-### Placing blocks
+## 첫 번째 활동
 
-The agent is capable of placing Minecraft blocks, but doing so is a multi-step process.  Before the agent can place a Minecraft block, the agent needs to have a block in its inventory.
+### 블록 놓기
 
-The first step is to use ``||agent:agent set block or item||`` to put a block in the agent's inventory.
+Agent는 Minecraft 블록을 놓을 수 있지만, 그러려면 여러 단계를 거쳐야 합니다. Agent가 Minecraft 블록을 놓으려면 먼저 인벤토리에 블록이 있어야 합니다.
+
+첫 번째 단계는 ``||agent:agent set block or item||``을 사용하여 Agent의 인벤토리에 블록을 넣는 것입니다.
 
 #### ~ tutorialhint
 
-The agent places blocks from its first inventory slot by default, so use ``||agent:agent set block or item||`` to set a block in slot **1** of the agent's inventory.
+Agent는 기본적으로 인벤토리의 첫 번째 슬롯에 있는 블록을 놓습니다. 따라서 ``||agent:agent set block or item||``을 사용하여 Agent의 인벤토리 **1**번 슬롯에 블록을 넣으세요.
 
-### Searching by block name
+### 블록 이름으로 검색하기
 
-The drop-down menu in ``||agent:agent set block or item||`` is rather large, so finding a specific Minecraft block can be challenging.
+``||agent:agent set block or item||``의 드롭다운 메뉴에는 항목이 많아서 특정 Minecraft 블록을 찾기가 어려울 수 있습니다.
 
-In the drop-down menu, search for **redstone** to quickly find and select **Block of Redstone**.
+드롭다운 메뉴에서 **redstone**을 검색하면 **Block of Redstone**을 빠르게 찾아 선택할 수 있습니다.
 
 #### ~ tutorialhint
 
@@ -30,11 +34,11 @@ player.onChat("place", function () {
 })
 ```
 
-### Consecutive statements
+### 연속된 statements
 
-The second step, after putting a block in the agent's inventory, is to make the ``||agent:agent place||`` the block.
+Agent의 인벤토리에 블록을 넣은 다음, 두 번째 단계는 ``||agent:agent place||``로 Agent가 그 블록을 놓게 하는 것입니다.
 
-Drag an ``||agent:agent place||`` block from the ``||agent:AGENT||`` category and attach it to the bottom of ``||agent:agent set block or item||``.  Then run the **place** ``||player:chat command||``.
+``||agent:agent place||`` 블록을 ``||agent:AGENT||`` 카테고리에서 끌어와 ``||agent:agent set block or item||`` 아래에 연결하세요. 그런 다음 **place** ``||player:chat command||``를 실행하세요.
 
 
 #### ~ tutorialhint

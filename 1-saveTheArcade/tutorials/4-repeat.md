@@ -1,19 +1,23 @@
 # Repeat
 
+<!-- Modified by bybang on 2026-10-15: Korean localization of instructional prose and verified deployed @hideDone directive. Original: Cleverlike-MakeCode/GameCodeArcade, 1-saveTheArcade/tutorials/4-repeat.md, commit 2b7a616a1212cbf9992450213c62b8d0bdfffd0b. Licensed under Apache-2.0; see LICENSE. -->
+
 ### @explicitHints 1
 
 ### @activities true
 
-## First Activity
+### @hideDone true
 
-### Patterns
+## 첫 번째 활동
 
-Some problems involve performing a certain set of actions over and over.  A **repeat loop** can simplify the solution by eliminating the need to rewrite the same code multiple times.
-A ``||loops:repeat||`` block is a **compound statement block**.  A compound statement block can fit anywhere a statement block fits, but also has an inner section where more statement blocks can be added.
+### 패턴
+
+어떤 문제를 해결하려면 정해진 동작들을 계속 반복해야 합니다. **repeat loop**를 사용하면 같은 코드를 여러 번 작성할 필요가 없어 해결 방법이 간단해집니다.
+``||loops:repeat||`` 블록은 **compound statement block**입니다. compound statement block은 statement block이 들어갈 수 있는 곳이면 어디든 들어갈 수 있으며, 안쪽에도 statement block을 더 넣을 수 있는 공간이 있습니다.
 
 #### ~ tutorialhint
 
-A ``||loops:repeat||`` block fits inside an event block but needs statement blocks inside it.
+``||loops:repeat||`` 블록은 event block 안에 넣을 수 있지만, 그 안에도 statement block을 넣어야 합니다.
 
 ```blocks
 player.onChat("clean", function () {
@@ -23,11 +27,11 @@ player.onChat("clean", function () {
 })
 ```
 
-### Repeating a sequence
+### 동작 순서 반복하기
 
-Drag a ``||loops:repeat||`` block from the ``||loops:LOOPS||`` category into the ``||player:chat command||`` and place the existing ``||agent:agent destroy||`` and ``||agent:agent move||`` code blocks inside it.
+``||loops:repeat||`` 블록을 ``||loops:LOOPS||`` 카테고리에서 끌어와 ``||player:chat command||`` 안에 넣고, 기존의 ``||agent:agent destroy||``와 ``||agent:agent move||`` 코드 블록을 그 안에 넣으세요.
 
-A ``||loops:repeat||`` block is a type of **loop** because it loops through the same section of code multiple times.
+``||loops:repeat||`` 블록은 같은 코드 구간을 여러 번 반복해서 실행하므로 **loop**의 한 종류입니다.
 
 #### ~ tutorialhint
 
@@ -40,9 +44,9 @@ player.onChat("clean", function () {
 })
 ```
 
-### Loop Counting
+### Loop 반복 횟수
 
-We need to specify how many times we want the ``||loops:repeat||`` block to run. By default it is set to 4 times, but the agent has 12 spaces to clean. We can change the **4** value to a **12** inside the ``||loops:repeat||`` block.
+``||loops:repeat||`` 블록을 몇 번 실행할지 지정해야 합니다. 기본값은 4번이지만, Agent가 청소해야 할 칸은 12칸입니다. ``||loops:repeat||`` 블록 안의 **4**를 **12**로 바꿀 수 있습니다.
 
 #### ~ tutorialhint
 
@@ -55,11 +59,11 @@ player.onChat("clean", function () {
 })
 ```
 
-### Review
+### 복습
 
-Repeat loops run a sequence of statements a certain number of times. Loops can greatly reduce the amount of code to write to solve a problem.
+repeat loop는 일련의 statements를 정해진 횟수만큼 실행합니다. loop를 사용하면 문제를 해결하기 위해 작성해야 하는 코드의 양을 크게 줄일 수 있습니다.
 
-Don't forget to press Play and then type **clean** in the chat to run the code.
+Play를 누른 다음 채팅에 **clean**을 입력하여 코드를 실행하는 것을 잊지 마세요.
 
 #### ~ tutorialhint
 
